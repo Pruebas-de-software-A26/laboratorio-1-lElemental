@@ -1,0 +1,16 @@
+INFO:root:Test Case 1(RF1)
+INFO:root:Pass using the debugger
+INFO:root:end Test CASE
+INFO:root:Test Case 2(RF2)
+INFO:root:before if
+INFO:root:PASS
+INFO:root:end Test CASE3(RF3)
+INFO:root:PASS using debugging
+INFO:root:end Test Case
+INFO:root:Test Case 4(RF4)
+INFO:root:The names are: [1, 2]
+INFO:root:FAIL
+WARNING:root:return the IDs
+INFO:root:Test case 5  (RNF1)
+INFO:root:PASS using debugging
+INFO:root:end Test Case
