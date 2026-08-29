@@ -1,5 +1,6 @@
 import user_manager
 import logging
+import time
 
 logging.basicConfig(
     level = logging.DEBUG,
@@ -56,3 +57,24 @@ if __name__ == "__main__":
         Manager.add_user(i, 'user'+str(i))
     logging.info('PASS using debugging')
     logging.info('end Test Case')
+
+    logging.info('Test Case RNF2 (Rendimiento)')
+    logging.info("Rendimiento: Insertando 1000 usuarios")
+    
+    for i in range(1, 1001):
+        username = f"User{i}"
+        Manager.add_user(i, username)
+        
+    inicio = time.perf_counter()
+    Manager.find_user(500)
+    fin = time.perf_counter()
+
+    tiempo_final = fin - inicio
+    logging.info(f"Tiempo de ejecucion para encontrar el usuario 500: {tiempo_final:.6f} segundos")
+
+    if tiempo_final < 0.01:
+        logging.info('PASS')
+    else:
+        logging.info('FAIL')
+        
+    logging.info('end Test Case RNF2')

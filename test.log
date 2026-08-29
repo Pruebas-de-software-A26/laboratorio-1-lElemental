@@ -14,3 +14,8 @@ WARNING:root:return the IDs
 INFO:root:Test case 5  (RNF1)
 INFO:root:PASS using debugging
 INFO:root:end Test Case
+INFO:root:Test Case RNF2 (Rendimiento)
+INFO:root:Rendimiento: Insertando 1000 usuarios
+INFO:root:Tiempo de ejecucion para encontrar el usuario 500: 0.000138 segundos
+INFO:root:PASS
+INFO:root:end Test Case RNF2
